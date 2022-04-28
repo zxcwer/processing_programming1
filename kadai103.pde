@@ -1,0 +1,21 @@
+void setup(){
+  size(600,500);
+  background(255,255,255);
+}
+
+void draw(){
+  if(mousePressed==true){
+    stroke(random(256),random(256),random(256));
+    for(int i = 3; i > 0; i--){
+      rect(mouseX, mouseY, i*8, i*8);
+      rectMode(CENTER);
+    }
+    
+  }
+}
+
+void keyPressed(){
+  if(key=='c'){
+    background(255,255,255);
+   }
+}
